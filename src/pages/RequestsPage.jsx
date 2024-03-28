@@ -77,7 +77,12 @@ const RequestsPage = () => {
                     <td>{item.data()?.campaign}</td>
                     <td>{item.data()?.amount}</td>
                     <td>{item.data()?.status}</td>
-            
+                    <td>
+                      <select name="" id="">
+                        <option value="processing">In progress</option>
+                        <option value="completed">Withdrawl completed</option>
+                      </select>
+                    </td>
                   </tr>
                 );
               })}

@@ -17,7 +17,7 @@ const ActiveCampaignCard = ({ data, id }) => {
     getData();
   }, []);
   return (
-    <Link to="">
+    <Link to={`/more/${id}`}>
       <div className="bg-white relative rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-transform">
         <div className="flex absolute gap-2 top-2 left-2">
           <div

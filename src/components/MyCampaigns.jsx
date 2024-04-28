@@ -65,10 +65,15 @@ const MyCampaigns = ({ data, id }) => {
           </div>
 
           <div className="space-y-3">
-            <div className="gap-7 max-sm:flex-col max-sm:gap-2">
-              <Link to={`/edit/${id}`}>
+            <div className="flex gap-7 max-sm:flex-col max-sm:gap-2">
+              <Link to={`/edit/${id}`} className="w-full">
                 <button className="w-full border hover:text-white hover:bg-blue-500 rounded-full text-blue-500 border-blue-500 py-2">
                   Edit story
+                </button>
+              </Link>
+              <Link to={`/edit/${id}`} className="w-full">
+                <button className="w-full border hover:text-white hover:bg-blue-500 rounded-full text-blue-500 border-blue-500 py-2">
+                  Upload documents
                 </button>
               </Link>
             </div>
@@ -115,6 +120,11 @@ const MyCampaigns = ({ data, id }) => {
             </div>
           </div>
         </div>
+        <Link to={`/more/${id}`}>
+          <div className="border-t bg-gray-100 text-center py-3 mt-5">
+            View more details
+          </div>
+        </Link>
       </div>
     </>
   );

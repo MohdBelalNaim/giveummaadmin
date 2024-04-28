@@ -2,6 +2,7 @@ import { lazy } from "react";
 import { MdCampaign, MdDashboard, MdMessage, MdReport } from "react-icons/md";
 import { BiMoneyWithdraw, BiSolidDonateHeart } from "react-icons/bi";
 import { FaPowerOff, FaUsers } from "react-icons/fa";
+import { BsNewspaper, BsPenFill } from "react-icons/bs";
 
 export const PageRoutes = [
   {
@@ -39,6 +40,18 @@ export const PageRoutes = [
     title: "Reports",
     element: lazy(() => import("./pages/DonationPage")),
     icon: <MdReport size={24} />,
+  },
+  {
+    path: "/create-blog",
+    title: "Create Blog",
+    element: lazy(() => import("./pages/DonationPage")),
+    icon: <BsPenFill size={24} />,
+  },
+  {
+    path: "/all-blogs",
+    title: "All Blogs",
+    element: lazy(() => import("./pages/AllBlogs")),
+    icon: <BsNewspaper size={24} />,
   },
   {
     path: "/logout",

@@ -5,6 +5,9 @@ import Loader from "./components/Loader";
 import Sidebar from "./components/Sidebar";
 import AllCampaigns from "./pages/AllCampaigns";
 import Profile from "./pages/Profile";
+import MoreDetails from "./pages/MoreDetails";
+import CreateBlog from "./pages/CreateBlog";
+import AllBlogs from "./pages/AllBlogs";
 const ActiveCampaignsPage = lazy(() => import("./pages/ActiveCampaignsPage"));
 const EditUserPage = lazy(() => import("./pages/EditUserPage"));
 const HomePage = lazy(() => import("./pages/HomePage"));
@@ -48,6 +51,9 @@ const App = () => {
               <Route path="/edit/:id" element={<EditUserPage />}></Route>
               <Route path="/all-campaigns" element={<AllCampaigns />}></Route>
               <Route path="/profile/:id" element={<Profile />}></Route>
+              <Route path="/more/:id" element={<MoreDetails />}></Route>
+              <Route path="/create-blog" element={<CreateBlog />}></Route>
+              <Route path="/all-blogs" element={<AllBlogs />}></Route>
             </Routes>
           </Suspense>
         </main>
